@@ -1,0 +1,15 @@
+body {
+    color: magenta;
+    background-color: black;
+    background-image: url('matrix.gif');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0%;
+}
+.left {
+  text-align: left;
+  padding: 5%;
+}

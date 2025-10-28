@@ -1,1 +1,102 @@
-sigma sigma on the wall
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/jpg" href="pene.jpg">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="How To Do Shit On Void Fucking Linux" property="og:title" />
+  <meta content="How To Do Shit On Void Fucking Linux" property="og:description" />
+  <meta content="https://uberpolice.uninhibited.sbs" property="og:url" />
+  <meta content="#3F5EFB" data-react-helmet="true" name="theme-color" />
+  <title>How To Do Shit On Void Fucking Linux</title>
+</head>
+<body>
+<h1>Void Linux pisses me the fuck off</h1>
+<h2>Here's how you can do shit on this fuck ass operating system</h2>
+<p class="left">[Enable Optional Repos]
+    <br>
+sudo xbps-install -S void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree void-repo-debug
+<br>
+<br>
+[List Repos In Use]
+<br>
+ls /usr/share/xbps.d/
+<br>
+<br>
+[Enable Service]
+<br>
+sudo ln -s /etc/sv/service_name /var/service/
+<br>
+<br>
+[Bluetooth]
+<br>
+sudo xbps-install -S bluez bluez-alsa blueman
+<br>
+sudo ln -s /etc/sv/bluetoothd /var/service/
+<br>
+sudo sv up bluetoothd
+<br>
+<br>
+[AMD GPU Drivers]
+<br>
+sudo xbps-install -Sy linux-firmware-amd mesa-dri vulkan-loader mesa-vulkan-radeon mesa-vaapi
+<br>
+<br>
+[How to use XDEB]
+<br>
+https://github.com/xdeb-org/xdeb/releases/latest
+<br>
+sudo xbps-install -S binutils tar curl xbps xz
+<br>
+./xdeb -Sedf <name>_<version>_<arch>.deb
+    <br>
+cd binpkgs
+<br>
+sudo xbps-install -R . program_name
+<br>
+<br>
+[Additional]
+<br>
+sudo xbps-install -S v4l2loopback MangoHud mesa-32bit libdrm-32bit steam obs macchanger exiftool yt-dlp
+<br>
+<br>
+[7zip]
+<br>
+sudo xbps-install -S p7zip
+<br>
+# extract 7z x file.7z
+<br>
+# compress 7z a archive.7z dir
+<br>
+<br>
+[LACT]
+<br>
+sudo xbps-install -S LACT
+<br>
+sudo ln -s /etc/sv/lact /var/service/
+<br>
+<br>
+[virt-manager]
+<br>
+sudo xbps-install -S virt-manager libvirt qemu dnsmasq bridge-utils
+<br>
+sudo ln -s /etc/sv/libvirtd /var/service/
+<br>
+sudo sv up libvirtd
+<br>
+sv status libvirtd
+<br>
+sudo usermod -aG libvirt $USER
+<br>
+sudo ln -s /etc/sv/virtlogd /var/service/
+<br>
+sudo ln -s /etc/sv/virtlockd /var/service/
+<br>
+sudo ln -s /etc/sv/dnsmasq /var/service/
+<br>
+sudo sv restart libvirtd
+</p>
+<h6><p>Made by some homeless douchebag in a starbucks</p></h6>
+    </body>
+</html>
